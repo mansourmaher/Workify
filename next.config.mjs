@@ -17,7 +17,6 @@ const nextConfig = {
     ],
   },
   experimental: {
-    nftTracing: true ,
     serverActions: {
       allowedOrigins: ["my-proxy.com", "*.my-proxy.com"],
     },
