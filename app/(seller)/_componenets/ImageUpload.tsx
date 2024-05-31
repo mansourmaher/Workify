@@ -22,6 +22,8 @@ function ImageUpload({ files, setFile }) {
   };
 
   const removeImage = (i) => {
+          // @ts-ignore
+
     setFile(files.filter((x) => x.name !== i));
   };
   return (

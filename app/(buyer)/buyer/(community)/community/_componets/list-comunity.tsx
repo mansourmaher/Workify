@@ -16,6 +16,7 @@ export default function ComunityList  ({comunity}:ComunityProps){
     if (category === "") {
       setFilteredJobs(comunity);
     } else {
+      // @ts-ignore
       const filtered = comunity.filter((job) => job.category === category);
       setFilteredJobs(filtered);
     }

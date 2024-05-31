@@ -17,6 +17,7 @@ export default function ComunityList({ comunity }: ComunityUserProps) {
     if (category === "") {
       setFilteredJobs(comunity);
     } else {
+      // @ts-ignore
       const filtered = comunity.filter((job) => job.category === category);
       setFilteredJobs(filtered);
     }
@@ -57,6 +58,7 @@ export default function ComunityList({ comunity }: ComunityUserProps) {
         Community - {comunity.length}
       </div>
       <div className="h-[580px] overflow-y-auto p-4 ">
+        {/* @ts-ignore */}
         {filteredJobs.map((comunity) => (
           <div key={comunity.id} className="flex  ">
             <ComunityListItem comm={comunity} />

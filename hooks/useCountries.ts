@@ -14,6 +14,8 @@ const useCountries=()=>{
     const getAll=()=>formatedCountreis
 
 const getValues=(value:string)=>{
+          // @ts-ignore
+
     return formatedCountreis.filter((country)=>country.value===value)
 }
 return {

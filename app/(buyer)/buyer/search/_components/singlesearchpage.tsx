@@ -19,6 +19,8 @@ function Singlesearchpage({ gigs, q }: SearchPageProps) {
     if (category === "") {
       setFilteredJobs(gigs);
     } else {
+      // @ts-ignore
+
       const filtered = gigs.filter((gig) => gig.category === category);
       setFilteredJobs(filtered);
     }
