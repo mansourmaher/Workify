@@ -17,6 +17,7 @@ interface SearchGridItemProps {
 function SearchGridItem({ gig, key }: SearchGridItemProps) {
   const router = useRouter();
   const averageRating =
+  //@ts-ignore
     gig.Reviews.reduce((acc, review) => acc + review.rating, 0) /
     gig.Reviews.length;
 
