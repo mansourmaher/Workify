@@ -1,5 +1,5 @@
+"use server"
 import { db } from '@/lib/db';
-import { PasswordResetToken } from './../node_modules/.prisma/client/index.d';
 
 
 export const  getPasswordResetTokenByToken= async(token:string)=>{
