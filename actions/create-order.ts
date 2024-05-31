@@ -1,4 +1,3 @@
-import { Gigs } from './../node_modules/.prisma/client/index.d';
 "use server"
 
 import { auth } from "@/auth";
