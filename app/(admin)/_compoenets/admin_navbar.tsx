@@ -70,7 +70,6 @@ const AdminNavbar = async () => {
           <DropdownMenuContent align="end">
             <DropdownMenuLabel>My Account</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <Profile2 />
 
             <DropdownMenuSeparator />
             <DropdownMenuItem>Support</DropdownMenuItem>
