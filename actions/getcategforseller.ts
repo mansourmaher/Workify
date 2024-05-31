@@ -21,12 +21,25 @@ export async function getcategdistinct()
             }
         }
     })
+    //@ts-ignore
     const graficdesign=sellerapply.filter((item)=>item.job.category=="Graphic Design").length
+        //@ts-ignore
+
     const digitalmarketing=sellerapply.filter((item)=>item.job.category=="Digital Marketing").length
+        //@ts-ignore
+
     const videoanimation=sellerapply.filter((item)=>item.job.category=="Video & Animation").length
+        //@ts-ignore
+
     const programmingtech=sellerapply.filter((item)=>item.job.category=="Programming & Tech").length
+        //@ts-ignore
+
     const business=sellerapply.filter((item)=>item.job.category=="Business").length
+        //@ts-ignore
+
     const lifestyle=sellerapply.filter((item)=>item.job.category=="Lifestyle").length
+        //@ts-ignore
+
     const categwithcount=[
         {name:"Graphic Design",count:graficdesign},
         {name:"Digital Marketing",count:digitalmarketing},
@@ -36,6 +49,8 @@ export async function getcategdistinct()
         {name:"Lifestyle",count:lifestyle},
     
     ]
+        //@ts-ignore
+
     return categwithcount
 
 }
