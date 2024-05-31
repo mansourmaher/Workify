@@ -1,4 +1,3 @@
-import { User } from './../node_modules/.prisma/client/index.d';
 "use server"
 import { db } from '@/lib/db';
 
