@@ -38,14 +38,25 @@ export async function getUsersInCommunity(communityId: string) {
             user:true
         }
     });
+    //@ts-ignore
     const userIncludePostsCount=Promise.all(users.map(async user=>{
+            //@ts-ignore
+
         const postsCount=await db.post.count({
+                //@ts-ignore
+
             where:{
+                    //@ts-ignore
+
                 userId:user.userId
             }
         })
+            //@ts-ignore
+
         return {...user,postsCount}
     }))
+        //@ts-ignore
+
     
    
     return userIncludePostsCount
