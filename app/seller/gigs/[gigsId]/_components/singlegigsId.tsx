@@ -4,6 +4,7 @@ import { getGigsById } from "@/actions/get-gigs-byid";
 import UploadImagewithcloudinar from "@/app/(seller)/_componenets/UploadImagewithcloudinar";
 import { categories } from "@/utils/categories";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 interface SingleGigsIdProps {
@@ -58,16 +59,19 @@ function SingleGigsId({ gigs }: SingleGigsIdProps) {
       description: data.description,
       //   time: data.time,
       revisions: data.revisions,
+      deliveryTime: data.time,
       price: data.price,
       shortDesc: data.shortDesc,
       features: features,
 
       images: tabofimages,
     };
-    console.log("image", files);
-    console.log("cat" + data.category);
+
     await editGigs(gigData);
+    router.refresh();
+    router.push("/seller/gigs");
   };
+  const router = useRouter();
 
   return (
     <div className="min-h-[80vh] my-10 mt-32 px-32">
@@ -101,7 +105,7 @@ function SingleGigsId({ gigs }: SingleGigsIdProps) {
               onChange={handleChange}
               value={data.category}
             >
-               {/* @ts-ignore */}
+              {/* @ts-ignore */}
               {categories.map(({ name }) => (
                 <option key={name} value={name}>
                   {name}
@@ -179,7 +183,7 @@ function SingleGigsId({ gigs }: SingleGigsIdProps) {
               </button>
             </div>
             <ul className="flex gap-2 flex-wrap">
-               {/* @ts-ignore */}
+              {/* @ts-ignore */}
               {features.map((feature, index) => {
                 return (
                   <li
@@ -198,7 +202,7 @@ function SingleGigsId({ gigs }: SingleGigsIdProps) {
               })}
             </ul>
             <ul className="flex gap-2 flex-wrap">
-               {/* @ts-ignore */}
+              {/* @ts-ignore */}
               {tabofimages.map((url, index) => {
                 return (
                   <li

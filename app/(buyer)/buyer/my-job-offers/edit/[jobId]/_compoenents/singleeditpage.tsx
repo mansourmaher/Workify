@@ -35,6 +35,7 @@ function SingleJobofferEdit({ job }: Job) {
   const handelcreate = async () => {
     await editJobOffer(job?.id!, title, description, category, price, features,shortDesc);
     router.refresh();
+    router.push("/buyer/my-job-offers");
   };
 
   return (

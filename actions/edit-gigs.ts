@@ -2,6 +2,7 @@
 
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
+import { parse } from "path";
 
 
 export async function editGigs(gigData:any) {
@@ -10,6 +11,12 @@ export async function editGigs(gigData:any) {
         const userId = user?.user.id;
         console.log("user", userId);
         console.log("gigData", gigData);
+        console.log(typeof gigData.price)
+        console.log(typeof gigData.revisions)
+        console.log(typeof gigData.deliveryTime)
+        const price=parseInt(gigData.price)
+        const revisions=parseInt(gigData.revisions)
+        const deliveryTime=parseInt(gigData.deliveryTime)
 
         await db.gigs.update({
             where: {
@@ -17,7 +24,10 @@ export async function editGigs(gigData:any) {
             },
             data: {
                 ...gigData,
-                userId: userId!
+                userId: userId!,
+                price: price,
+                revisions: revisions,
+                deliveryTime: deliveryTime
             }
         });
 
