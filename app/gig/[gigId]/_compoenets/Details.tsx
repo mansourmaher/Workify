@@ -93,6 +93,7 @@ function Details({ gigData }: GigProps) {
             </div>
             <div className="flex gap-4 flex-wrap">
               {gigData.images.length > 1 &&
+              // @ts-ignore
                 gigData.images.map((image) => (
                   <Image
                     src={image}
