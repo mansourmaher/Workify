@@ -70,6 +70,7 @@ export default function ComunityPostItem({
                 </div>
               </div>
             </div>
+            {/* @ts-ignore */}
             {post.PostResponse.map((response) => (
               <div key={response.id} className="flex items-start space-x-4 ">
                 <div className="flex flex-col items-center space-y-4">
