@@ -1,6 +1,5 @@
 "use client";
 import { getSellerData } from "@/actions/getsellerdata";
-import { useStateProvider } from "../../../../../fiver-clone-master/client/src/context/StateContext";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { getLoggedUser } from "@/actions/get-logged-user";
