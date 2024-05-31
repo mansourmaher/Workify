@@ -30,6 +30,8 @@ export async function getallfrelencer()
         }
     )
     // console.log(JSON.stringify(frelencers,null,2))
+    //@ts-ignore
+
     const frelencerwithavrgrating=await Promise.all(frelencers.map(async (frelencer)=>{
         const rating=frelencer.Gigs.map(gig=>gig.Reviews.map(review=>review.rating)).flat()
         const avgrating=rating.reduce((a,b)=>a+b,0)/rating.length
@@ -65,6 +67,7 @@ export async function getallclient()
         }
     )
     // console.log(JSON.stringify(frelencers,null,2))
+        //@ts-ignore
     const frelencerwithavrgrating=await Promise.all(frelencers.map(async (frelencer)=>{
         const rating=frelencer.Gigs.map(gig=>gig.Reviews.map(review=>review.rating)).flat()
         const avgrating=rating.reduce((a,b)=>a+b,0)/rating.length
