@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { getGigsById } from "@/actions/get-gigs-byid";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -26,6 +26,7 @@ function Reviews({ gigData }: ReviewsProps) {
         <div className="mb-10">
           <h3 className="text-2xl my-5 font-normal text-[#404145] ">Reviews</h3>
           <div className="flex gap-3 mb-5">
+            {/* @ts-ignore */}
             <h5>{gigData.Reviews.length} reviews for this Gig</h5>
             <div className="flex text-yellow-500 items-center gap-2">
               <div className="flex gap-1">
@@ -44,6 +45,7 @@ function Reviews({ gigData }: ReviewsProps) {
             </div>
           </div>
           <div className="flex flex-col gap-6">
+            {/* @ts-ignore */}
             {gigData.Reviews.map((review) => (
               <div className="flex gap-3 border-t pt-6" key={review.id}>
                 <div>
