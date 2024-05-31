@@ -57,13 +57,3 @@ export async function acceptApply(applyId: string) {
     })
 }
 
-/*jobApplicationId String
-  jobApplication   JobApplication @relation(fields: [jobApplicationId], references: [id])
-  freelancerId     String
-  freelancer       User           @relation("frellencer", fields: [freelancerId], references: [id])
-  clientId         String
-  client           User           @relation("client", fields: [clientId], references: [id])
-  title            String
-  description      String
-  price            Int
-  */
