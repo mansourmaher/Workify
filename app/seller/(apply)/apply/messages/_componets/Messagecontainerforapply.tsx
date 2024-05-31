@@ -36,7 +36,7 @@ function Messagecontainerforapply({
 
   const sendMessages = async () => {
     if (messageText.length) {
-      await sendMessageinapply(applyId, messageText , "","");
+      await sendMessageinapply(applyId, messageText, "", "");
       setMessageText("");
       router.refresh();
     }
@@ -47,6 +47,8 @@ function Messagecontainerforapply({
         <div className="bg-white py-8 px-4 shadow-2xl sm:rounded-lg sm:px-10 w-[80vw] border flex flex-col">
           <div className="mt-8">
             <div className="space-y-4 h-[50vh] overflow-y-auto pr-4 ">
+              {/* @ts-ignore */}
+
               {messages.map((message) => (
                 <div
                   key={message.id}
