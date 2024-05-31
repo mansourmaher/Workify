@@ -35,7 +35,7 @@ function SingleJobofferCreate() {
       price === 0 ||
       shortDesc === ""
     ) {
-      toast.error("Please fill all the fields");
+      toast.error("all fields are required");
     } else {
       await createJobOffer(
         title,
