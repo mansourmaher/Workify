@@ -13,13 +13,12 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { User } from "@prisma/client";
 import { Loader2 } from "lucide-react";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 
 interface ReportBtnProps {
-  clienttoreport: User
+  clienttoreport: any
 }
 
 export function ReportBtn({ clienttoreport }: ReportBtnProps) {
