@@ -4,7 +4,7 @@ import { auth } from "@/auth"
 import { db } from "@/lib/db"
 
 
-export async function sendMessageinapply(applyId:string,message:string,fileurl:string,fileName:string)
+export async function sendMessageinapply(applyId:string,message:string,fileurl:string ,fileName:string)
 {
     const user=await auth()
     const userr=await db.user.findFirst({

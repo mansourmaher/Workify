@@ -2,7 +2,6 @@
 import { addReview } from "@/actions/add-review";
 import { existingOrder } from "@/actions/existingorder";
 import { havereveiw } from "@/actions/haveareviw";
-import axios from "axios";
 import { useRouter } from "next/navigation";
 import React, { use, useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";

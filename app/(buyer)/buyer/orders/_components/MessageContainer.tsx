@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { FaRegPaperPlane } from "react-icons/fa";
 import { BsCheckAll } from "react-icons/bs";
-import axios from "axios";
 import { useRouter } from "next/navigation";
 import { getMessageInOrder } from "@/actions/getmessageinorder";
 import { getLoggedUser } from "@/actions/get-logged-user";

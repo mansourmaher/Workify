@@ -1,6 +1,5 @@
-"use client"
+"use client";
 import { getunrededMessage } from "@/actions/get-unreadedmessage";
-import axios from "axios";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -38,7 +37,7 @@ function UnreadMessages({ message }: Message) {
                 Sender Name
               </th>
               <th scope="col" className="px-6 py-3">
-               Gigs
+                Gigs
               </th>
               <th scope="col" className="px-6 py-3">
                 Mark as Read
@@ -62,7 +61,7 @@ function UnreadMessages({ message }: Message) {
                     {message?.sender?.fullname}
                   </th>
                   <th scope="row" className="px-6 py-4 font-medium">
-                    {message.order.gig.title}
+                    {message.order?.gig.title}
                   </th>
                   <td className="px-6 py-4 ">
                     <Link
