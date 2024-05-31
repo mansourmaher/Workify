@@ -11,12 +11,11 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Textarea } from "@/components/ui/textarea";
-import { User } from "@prisma/client";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"; // Import Avatar component
 import React, { useEffect, useState } from "react";
 
 interface ReportBtnProps {
-  user: User;
+  user: any;
 }
 
 export function Reportlist({ user }: ReportBtnProps) {
