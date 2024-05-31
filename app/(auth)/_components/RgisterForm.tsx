@@ -72,7 +72,7 @@ export const RegisterForm = () => {
         <div className="w-full max-w-md shadow-xl  rounded-lg p-6">
           <div className="flex justify-center mb-6"></div>
           <h2 className="text-3xl font-extrabold text-gray-900 text-center">
-            Welcome to the community
+            Welcome to Workify
           </h2>
 
           <Form {...form}>
@@ -147,7 +147,7 @@ export const RegisterForm = () => {
                   onClick={onChange}
                   className="font-bold text-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
                 >
-                  {selected} {selected === "CLIENT" ? "🎓" : "👨‍🏫"}
+                  {selected}
                 </span>
               </div>
               <div className="flex justify-between items-center">
