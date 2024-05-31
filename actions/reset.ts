@@ -1,7 +1,6 @@
 "use server"
 
 import { sendPasswordResetEmail } from '@/lib/mail';
-import { PasswordResetToken } from './../node_modules/.prisma/client/index.d';
 
 
 import { db } from "@/lib/db"
