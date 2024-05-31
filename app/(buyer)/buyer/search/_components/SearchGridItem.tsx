@@ -48,6 +48,7 @@ function SearchGridItem({ gig, key }: SearchGridItemProps) {
         <FaStar />
         <span>
           <strong className="font-medium">
+            {/* @ts-ignore */}
             {gig.Reviews.reduce((acc, review) => acc + review.rating, 0) /
               gig.Reviews.length}
           </strong>
