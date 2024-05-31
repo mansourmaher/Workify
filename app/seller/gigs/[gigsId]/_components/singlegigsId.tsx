@@ -49,6 +49,7 @@ function SingleGigsId({ gigs }: SingleGigsIdProps) {
   };
   const handelEditGig = async () => {
     const formData = new FormData();
+    //@ts-ignore
     files.forEach((file) => formData.append("images", file));
     const gigData = {
       id: gigs!.id,

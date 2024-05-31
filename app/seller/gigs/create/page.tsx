@@ -80,6 +80,7 @@ export default function Page() {
     //   toast.error("Please fill all the fields");
     // } else {
       const formData = new FormData();
+      //@ts-ignore
       files.forEach((file) => formData.append("images", file));
   
       const gigData = {

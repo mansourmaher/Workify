@@ -14,6 +14,7 @@ function Reviews({ gigData }: ReviewsProps) {
   useEffect(() => {
     if (gigData && gigData.Reviews.length) {
       let avgRating = 0;
+      //@ts-ignore
       gigData.Reviews.forEach(({ rating }) => (avgRating += rating));
       setAverageRatings((avgRating / gigData.Reviews.length).toFixed(1));
     }
