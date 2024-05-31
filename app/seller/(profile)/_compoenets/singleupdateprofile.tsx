@@ -8,7 +8,6 @@ import { Calendar } from "@/components/ui/calendar";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Origin } from "@prisma/client";
 import { Button } from "@/components/ui/button";
 import UploadImagewithcloudinarincomunity from "@/app/(buyer)/buyer/(community)/community/_componets/comunity-upload-image copy";
 import Contact from "@/app/landingpage/contact";
@@ -55,7 +54,7 @@ function SingleUpdateProfile({ user }: SingleUpdateProfileProps) {
   const [imageUrl, setImageUrl] = useState<string>(initailImageUrl);
   const [isloading, setIsloading] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
-  const [origin, setOrigin] = useState<Origin>(initialeOrigin);
+  const [origin, setOrigin] = useState<any>(initialeOrigin);
   const [patient, setPatient] = useState<string>("");
   const [patiants, setPatiants] = useState<string[]>(initialPatients);
   const [subtitle, setSubtitle] = useState<string>(initialSubtitle);
