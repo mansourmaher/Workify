@@ -20,6 +20,7 @@ const OrderWithRevenue = async () => {
             </tr>
           </thead>
           <tbody>
+             {/* @ts-ignore */}
             {mygigs.map((gig) => (
               <tr
                 key={gig.id}

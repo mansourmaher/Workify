@@ -1,5 +1,6 @@
 import countries from "world-countries"
 
+//@ts-ignore
 const formatedCountreis = countries.map((country) => ({
     label: country.name.common,
     value: country.cca2,

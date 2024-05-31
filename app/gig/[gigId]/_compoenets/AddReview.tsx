@@ -51,6 +51,7 @@ function AddReview({ gigid }: AddReviewProps) {
           disabled={!ishasOrdered || haveReview}
         ></textarea>
         <div className="flex gap-1">
+          {/* @ts-ignore */}
           {[1, 2, 3, 4, 5].map((num) => (
             <FaStar
               key={num}

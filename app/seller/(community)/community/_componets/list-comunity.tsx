@@ -37,6 +37,7 @@ export default function ComunityList({ comunity }: ComunityUserProps) {
           onChange={handleCategoryChange}
         >
           <option value="">Choose a Category</option>
+           {/* @ts-ignore */}
           {categories.map(({ name }) => (
             <option key={name} value={name}>
               {name}

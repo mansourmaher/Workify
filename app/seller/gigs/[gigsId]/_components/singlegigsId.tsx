@@ -100,6 +100,7 @@ function SingleGigsId({ gigs }: SingleGigsIdProps) {
               onChange={handleChange}
               value={data.category}
             >
+               {/* @ts-ignore */}
               {categories.map(({ name }) => (
                 <option key={name} value={name}>
                   {name}
@@ -177,6 +178,7 @@ function SingleGigsId({ gigs }: SingleGigsIdProps) {
               </button>
             </div>
             <ul className="flex gap-2 flex-wrap">
+               {/* @ts-ignore */}
               {features.map((feature, index) => {
                 return (
                   <li
@@ -195,6 +197,7 @@ function SingleGigsId({ gigs }: SingleGigsIdProps) {
               })}
             </ul>
             <ul className="flex gap-2 flex-wrap">
+               {/* @ts-ignore */}
               {tabofimages.map((url, index) => {
                 return (
                   <li

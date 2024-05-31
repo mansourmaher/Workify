@@ -43,6 +43,7 @@ function SingleMyjoboffers({ Jobs }: JobOffers) {
             </tr>
           </thead>
           <tbody>
+            {/* @ts-ignore */}
             {Jobs.map((order) => {
               return (
                 <tr

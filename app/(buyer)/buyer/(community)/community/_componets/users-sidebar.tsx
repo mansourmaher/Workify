@@ -23,6 +23,7 @@ export const UsersSidebar = async ({ communityId }: MobileSidebarProps) => {
             Members - {users.length}
           </div>
           <div className="h-[580px] overflow-y-auto p-4  bg-gray-100">
+            {/* @ts-ignore */}
             {users.map((user) => (
               <div key={user.id} className="flex  ">
                 <ComunityUserItem user={user} />

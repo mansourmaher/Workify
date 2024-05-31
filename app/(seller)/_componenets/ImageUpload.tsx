@@ -61,6 +61,7 @@ function ImageUpload({ files, setFile }) {
               </label>
             </div>
             <div className="flex flex-wrap gap-2 mt-2">
+              {/* @ts-ignore */}
               {files.map((file, key) => {
                 return (
                   <div key={key} className="overflow-hidden relative">

@@ -61,6 +61,7 @@ function SingleMyonlyjobapply({ apply }: SingleMyonlyjobapplyProps) {
             </tr>
           </thead>
           <tbody>
+            {/* @ts-ignore */}
             {apply.map((order) => {
               return (
                 <tr

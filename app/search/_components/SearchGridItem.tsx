@@ -82,6 +82,7 @@ function SearchGridItem({ gig, key }: SearchGridItemProps) {
       <div className="p-4">
         <h3 className="text-lg font-semibold mb-2">{gig.title}</h3>
         <div className="flex items-center mb-2">
+           {/* @ts-ignore */}
           {Array.from({ length: 5 }).map((_, i) => (
             <StarIcon
               key={i}

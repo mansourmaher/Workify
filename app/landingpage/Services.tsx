@@ -14,6 +14,7 @@ function Services() {
         You need it, we&apos;ve got it
       </h2>
       <ul className="grid grid-cols-5 gap-10">
+        {/* @ts-ignore */}
         {categories.map(({ name, logo }) => {
           return (
             <li

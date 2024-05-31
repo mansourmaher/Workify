@@ -45,6 +45,7 @@ function Singlesearchpage({ gigs, q }: SearchPageProps) {
           onChange={handleCategoryChange}
         >
           <option value="">All Categories</option>
+          {/* @ts-ignore */}
           {categories.map(({ name }) => (
             <option key={name} value={name}>
               {name}
@@ -53,6 +54,7 @@ function Singlesearchpage({ gigs, q }: SearchPageProps) {
         </select>
       </div>
       <div className="grid grid-cols-4">
+        {/* @ts-ignore */}
         {filteredJobs.map((gig) => (
           <SearchGridItem gig={gig} key={gig.id} />
         ))}

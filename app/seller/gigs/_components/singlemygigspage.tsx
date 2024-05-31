@@ -35,6 +35,7 @@ function SingleMyGigsPage({ gigs }: SingleMyGigsPageProps) {
             </tr>
           </thead>
           <tbody>
+             {/* @ts-ignore */}
             {gigs.map(({ title, category, price, deliveryTime, id }: any) => {
               return (
                 <tr

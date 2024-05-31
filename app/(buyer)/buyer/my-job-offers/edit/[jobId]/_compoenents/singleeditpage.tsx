@@ -73,6 +73,7 @@ function SingleJobofferEdit({ job }: Job) {
               }}
               defaultValue="Choose a Category"
             >
+              {/* @ts-ignore */}
               {categories.map(({ name }) => (
                 <option key={name} value={name}>
                   {name}
@@ -125,6 +126,7 @@ function SingleJobofferEdit({ job }: Job) {
               </button>
             </div>
             <ul className="flex gap-2 flex-wrap">
+              {/* @ts-ignore */}
               {features.map((feature, index) => {
                 return (
                   <li

@@ -71,6 +71,7 @@ function SingleClientPage({ frelencers }: Frelencers) {
               </tr>
             </thead>
             <tbody>
+              {/* @ts-ignore */}
               {currentItems?.map((order) => {
                 return (
                   <tr

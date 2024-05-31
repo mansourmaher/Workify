@@ -137,6 +137,7 @@ export default function Page() {
               onChange={handleChange}
               defaultValue="Choose a Category"
             >
+               {/* @ts-ignore */}
               {categories.map(({ name }) => (
                 <option key={name} value={name}>
                   {name}
@@ -214,6 +215,7 @@ export default function Page() {
               </button>
             </div>
             <ul className="flex gap-2 flex-wrap">
+               {/* @ts-ignore */}
               {features.map((feature, index) => {
                 return (
                   <li

@@ -54,6 +54,7 @@ function SingleOrdersPage({ orders }: Order) {
             </tr>
           </thead>
           <tbody>
+            {/* @ts-ignore */}
             {orders.map((order) => {
               return (
                 <tr

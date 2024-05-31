@@ -59,7 +59,7 @@ function Messagecontainerforapply({
         <div className="bg-white py-8 px-4 shadow-2xl sm:rounded-lg sm:px-10 w-[80vw] border flex flex-col">
           <div className="mt-8">
             <div className="space-y-4 h-[50vh] overflow-y-auto pr-4 ">
-                            {/* @ts-ignore */}
+              {/* @ts-ignore */}
 
               {messages.map((message) => (
                 <div
@@ -109,7 +109,7 @@ function Messagecontainerforapply({
           </div>
 
           <div className="mt-8 flex items-center">
-          <UploadPdfInmessage
+            <UploadPdfInmessage
               value={fileUrl}
               onchange={(url) => sendPdf(url)}
             />
@@ -128,7 +128,6 @@ function Messagecontainerforapply({
             >
               <FaRegPaperPlane />
             </button>
-            
           </div>
         </div>
       </div>

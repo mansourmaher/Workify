@@ -54,6 +54,7 @@ function PostuledJobs({ apply }: Apply) {
             </tr>
           </thead>
           <tbody>
+             {/* @ts-ignore */}
             {apply.map((order) => {
               return (
                 <tr

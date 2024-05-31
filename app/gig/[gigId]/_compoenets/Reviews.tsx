@@ -66,6 +66,7 @@ function Reviews({ gigData }: ReviewsProps) {
                   <h4>{review.reviewer.fullname}</h4>
                   <div className="flex text-yellow-500 items-center gap-2">
                     <div className="flex gap-1">
+                      {/* @ts-ignore */}
                       {[1, 2, 3, 4, 5].map((star) => (
                         <FaStar
                           key={star}

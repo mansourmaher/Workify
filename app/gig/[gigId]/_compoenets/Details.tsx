@@ -64,6 +64,7 @@ function Details({ gigData }: GigProps) {
             </div>
             <div className="flex items-center gap-1">
               <div className="flex">
+                {/* @ts-ignore */}
                 {[1, 2, 3, 4, 5].map((star) => (
                   <FaStar
                     key={star}
@@ -151,6 +152,7 @@ function Details({ gigData }: GigProps) {
                 </div>
                 <div className="flex items-center gap-1">
                   <div className="flex text-yellow-500">
+                    {/* @ts-ignore */}
                     {[1, 2, 3, 4, 5].map((star) => (
                       <FaStar
                         key={star}

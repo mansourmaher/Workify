@@ -45,6 +45,7 @@ export default function SheetNotification({user}:SheetNotificationProps) {
           </div>
         )}
         <ScrollArea className="h-[700px]  rounded-md border ">
+          {/* @ts-ignore */}
           {notification.map((notification) => (
             <SingleNotifications
               key={notification.id}

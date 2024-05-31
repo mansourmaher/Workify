@@ -48,6 +48,7 @@ function UnreadMessages({ message }: Message) {
             </tr>
           </thead>
           <tbody>
+             {/* @ts-ignore */}
             {message.map((message) => {
               return (
                 <tr

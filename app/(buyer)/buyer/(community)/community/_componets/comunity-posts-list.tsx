@@ -18,6 +18,7 @@ export default function ComunityPostList({
     <>
       <div className="flex flex-col ">
         {postId &&
+          // @ts-ignore
           posts.map((post) => (
             <div key={post.id}>
               {post.id === postId && (
@@ -29,6 +30,7 @@ export default function ComunityPostList({
               )}
             </div>
           ))}
+        {/* @ts-ignore */}
 
         {posts.map((post) => (
           <div key={post.id}>

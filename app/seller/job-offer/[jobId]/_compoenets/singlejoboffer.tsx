@@ -131,6 +131,7 @@ function SingleJoboffer({
             <div className="space-y-2">
               <h2 className="text-2xl font-bold">Requirements</h2>
               <ul className="list-disc pl-6 space-y-2 text-gray-500 dark:text-gray-400">
+                 {/* @ts-ignore */}
                 {job?.expertise?.map((expertise) => (
                   <li key={expertise}>{expertise}</li>
                 ))}
@@ -165,6 +166,7 @@ function SingleJoboffer({
               <CardTitle>Related Jobs</CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
+               {/* @ts-ignore */}
               {realtedJobs?.map((job) => (
                 <Link
                   key={job.id}

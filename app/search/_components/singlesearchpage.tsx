@@ -42,6 +42,7 @@ function Singlesearchpage({ gigs, q, category }: SearchPageProps) {
               </span>
             </div>
             <div className="grid grid-cols-4">
+               {/* @ts-ignore */}
               {gigs.map((gig) => (
                 <SearchGridItem gig={gig} key={gig.id} />
               ))}

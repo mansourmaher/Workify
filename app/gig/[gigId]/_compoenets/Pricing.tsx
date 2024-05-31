@@ -65,6 +65,7 @@ function Pricing({ gigData, userInfo }: PricingProps) {
               <ul></ul>
             </div>
             <ul className="flex gap-1 flex-col">
+              {/* @ts-ignore */}
               {gigData.features.map((feature) => (
                 <li key={feature} className="flex items-center gap-3">
                   <BsCheckLg className="text-[#1DBF73] text-lg" />

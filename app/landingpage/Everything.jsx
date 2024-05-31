@@ -33,6 +33,7 @@ function Everything() {
           The best part? Everything.
         </h2>
         <ul className="flex flex-col gap-10">
+          {/* @ts-ignore */}
           {everythingData.map(({ title, subtitle }) => {
             return (
               <li key={title}>

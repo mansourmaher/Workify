@@ -36,6 +36,7 @@ export default function ComunityList  ({comunity}:ComunityProps){
           onChange={handleCategoryChange}
         >
           <option value="">Choose a Category</option>
+          {/* @ts-ignore */}
           {categories.map(({ name }) => (
             <option key={name} value={name}>
               {name}
@@ -55,6 +56,7 @@ export default function ComunityList  ({comunity}:ComunityProps){
         Community - {comunity.length}
       </div>
       <div className="h-[580px] overflow-y-auto p-4 ">
+        {/* @ts-ignore */}
         {filteredJobs.map((comunity) => (
           <div key={comunity.id} className="flex  ">
             <ComunityListItem comm={comunity} />

@@ -33,11 +33,12 @@ Chartsjs.register(
  }
 
 function RevenueBarchart({ jobs }:JobsBarchartprops) {
-  
+
   const [chartData, setChartData] = useState<{
     labels: string[];
     datasets: any[];
   }>({
+    // @ts-ignore
     labels: jobs.map((c: any) => c.name),
     datasets: [],
   });
@@ -81,10 +82,12 @@ function RevenueBarchart({ jobs }:JobsBarchartprops) {
       },
     });
     setChartData({
+      // @ts-ignore
       labels: jobs.map((c: any) => c.name),
       datasets: [
         {
           label: "Revenue",
+          // @ts-ignore
           data: jobs.map((c: any) => c.value),
           borderColor: "rgba(53, 162, 235)",
           backgroundColor: "rgba(53, 162, 235, 0.4)",

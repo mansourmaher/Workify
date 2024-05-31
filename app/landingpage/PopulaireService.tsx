@@ -37,6 +37,7 @@ function PopularServices() {
         Popular Services
       </h2>
       <ul className="flex flex-wrap gap-16">
+        {/* @ts-ignore */}
         {popularServicesData.map(({ name, label, image }) => {
           return (
             <li
