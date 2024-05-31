@@ -1,12 +1,25 @@
+"use client";
 import { getMygigs } from "@/actions/get-my-gigs";
+import { Button } from "@/components/ui/button";
+import { db } from "@/lib/db";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
+import { ConfirmModel } from "./deletegigsbtn";
 
 interface SingleMyGigsPageProps {
   gigs: Awaited<ReturnType<typeof getMygigs>>;
 }
 
 function SingleMyGigsPage({ gigs }: SingleMyGigsPageProps) {
+  const router = useRouter();
+  const handeldelete = async (id: any) => {
+    await db.gigs.delete({
+      where: { id: id },
+    });
+    router.refresh();
+  };
+
   return (
     <div className="min-h-[80vh] my-10 mt-0 px-32">
       <h3 className="m-5 text-2xl font-semibold">All your Gigs</h3>
@@ -27,15 +40,12 @@ function SingleMyGigsPage({ gigs }: SingleMyGigsPageProps) {
                 Delivery Time
               </th>
               <th scope="col" className="px-6 py-3">
-                <span className="sr-only">Edit</span>
-              </th>
-              <th scope="col" className="px-6 py-3">
-                <span className="sr-only">Delete</span>
+                Actions
               </th>
             </tr>
           </thead>
           <tbody>
-             {/* @ts-ignore */}
+            {/* @ts-ignore */}
             {gigs.map(({ title, category, price, deliveryTime, id }: any) => {
               return (
                 <tr
@@ -51,13 +61,14 @@ function SingleMyGigsPage({ gigs }: SingleMyGigsPageProps) {
                   <td className="px-6 py-4">{category}</td>
                   <td className="px-6 py-4">{price}</td>
                   <td className="px-6 py-4">{deliveryTime}</td>
-                  <td className="px-6 py-4 text-right">
+                  <td className="px-6 py-4 text-center space-x-4 flex items-center">
                     <Link
                       href={`/seller/gigs/${id}`}
                       className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                     >
                       Edit
                     </Link>
+                    <ConfirmModel gigsId={id} />
                   </td>
                 </tr>
               );

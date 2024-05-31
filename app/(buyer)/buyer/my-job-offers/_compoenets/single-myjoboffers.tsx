@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { BsEyeSlash } from "react-icons/bs";
 import { FaEyeSlash } from "react-icons/fa";
+import { DeeleteJoboffer } from "./deletejiboffer";
 
 interface JobOffers {
   Jobs: Awaited<ReturnType<typeof getMyjobOffers>>;
@@ -19,9 +20,6 @@ function SingleMyjoboffers({ Jobs }: JobOffers) {
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
               <th scope="col" className="px-6 py-3">
-                Order Id
-              </th>
-              <th scope="col" className="px-6 py-3">
                 Name
               </th>
               <th scope="col" className="px-6 py-3">
@@ -35,7 +33,7 @@ function SingleMyjoboffers({ Jobs }: JobOffers) {
               </th>
 
               <th scope="col" className="px-6 py-3">
-                Edit
+                Actions
               </th>
               <th scope="col" className="px-6 py-3">
                 Apply
@@ -46,13 +44,7 @@ function SingleMyjoboffers({ Jobs }: JobOffers) {
             {/* @ts-ignore */}
             {Jobs.map((order) => {
               return (
-                <tr
-                  className="bg-white dark:bg-gray-800 hover:bg-gray-50"
-                  key={order.id}
-                >
-                  <th scope="row" className="px-6 py-4 ">
-                    {order.id}
-                  </th>
+                <tr>
                   <th scope="row" className="px-6 py-4 font-medium">
                     {order.title}
                   </th>
@@ -63,13 +55,14 @@ function SingleMyjoboffers({ Jobs }: JobOffers) {
                     {format(new Date(order.createdAt), "dd/MM/yyyy")}
                   </td>
 
-                  <td className="px-6 py-4  ">
+                  <td className="px-6 py-4 flex items-center space-x-4  ">
                     <Link
                       href={`/buyer/my-job-offers/edit/${order.id}`}
                       className="font-medium text-blue-600  hover:underline"
                     >
                       Edit
                     </Link>
+                    <DeeleteJoboffer gigsId={order.id} />
                   </td>
                   <td className="px-6 py-4  ">
                     <Link

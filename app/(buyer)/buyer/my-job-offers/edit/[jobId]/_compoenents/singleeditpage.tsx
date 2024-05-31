@@ -27,7 +27,6 @@ function SingleJobofferEdit({ job }: Job) {
   const [price, setPrice] = useState(job?.price || 0);
   const [shortDesc, setShortDesc] = useState(job?.shortDesc || "");
   const [singleFeature, setSingleFeature] = useState("");
-  const toast = useToast();
   const router = useRouter();
 
   const handleChange = (e: any) => {};
@@ -36,6 +35,7 @@ function SingleJobofferEdit({ job }: Job) {
     await editJobOffer(job?.id!, title, description, category, price, features,shortDesc);
     router.refresh();
     router.push("/buyer/my-job-offers");
+    toast.success("Job Offer Updated");
   };
 
   return (
