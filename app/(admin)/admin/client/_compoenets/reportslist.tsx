@@ -45,6 +45,7 @@ export function Reportlist({ user }: ReportBtnProps) {
           </DialogDescription>
         </DialogHeader>
         <div className="space-y-4 overflow-y-auto h-96">
+          {/* @ts-ignore */}
           {reports.map((report) => (
             <div key={report.id} className="flex items-center space-x-4">
               <Avatar>
