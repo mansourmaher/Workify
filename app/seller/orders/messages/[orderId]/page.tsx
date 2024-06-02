@@ -1,6 +1,6 @@
 import { getLoggedUser } from "@/actions/get-logged-user";
 import { getMessageInOrder } from "@/actions/getmessageinorder";
-import MessageContainer from "@/app/(buyer)/buyer/orders/_components/MessageContainer";
+import MessageContainer from "@/app/(buyerr)/buyer/orders/_components/MessageContainer";
 import React from "react";
 
 const Page = async ({
