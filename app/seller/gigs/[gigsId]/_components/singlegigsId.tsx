@@ -1,7 +1,7 @@
 "use client";
 import { editGigs } from "@/actions/edit-gigs";
 import { getGigsById } from "@/actions/get-gigs-byid";
-import UploadImagewithcloudinar from "@/app/(seller)/_componenets/UploadImagewithcloudinar";
+import UploadImagewithcloudinar from "@/app/(sellerr)/_componenets/UploadImagewithcloudinar";
 import { categories } from "@/utils/categories";
 import Image from "next/image";
 import { useRouter } from "next/navigation";

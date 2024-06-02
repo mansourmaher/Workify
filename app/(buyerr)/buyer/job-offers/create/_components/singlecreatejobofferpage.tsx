@@ -4,7 +4,7 @@ import { categories } from "@/utils/categories";
 import { createJobOffer } from "@/actions/create-job-offer";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
-import UploadImagewithcloudinar from "@/app/(seller)/_componenets/UploadImagewithcloudinar";
+import UploadImagewithcloudinar from "@/app/(sellerr)/_componenets/UploadImagewithcloudinar";
 import UploadImagewithcloudinarincomunity from "../../../(community)/community/_componets/comunity-upload-image copy";
 
 function SingleJobofferCreate() {

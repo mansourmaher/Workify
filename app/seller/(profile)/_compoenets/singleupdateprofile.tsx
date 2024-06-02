@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import UploadImagewithcloudinarincomunity from "@/app/(buyer)/buyer/(community)/community/_componets/comunity-upload-image copy";
+import UploadImagewithcloudinarincomunity from "@/app/(buyerr)/buyer/(community)/community/_componets/comunity-upload-image copy";
 import Contact from "@/app/landingpage/contact";
 import { getLoggedUser } from "@/actions/getloggeduser";
 import { FillInformation } from "@/actions/fill-information";

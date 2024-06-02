@@ -1,7 +1,7 @@
 "use client";
 import { addGigs } from "@/actions/add-gigs";
-import ImageUpload from "@/app/(seller)/_componenets/ImageUpload";
-import UploadImagewithcloudinar from "@/app/(seller)/_componenets/UploadImagewithcloudinar";
+import ImageUpload from "@/app/(sellerr)/_componenets/ImageUpload";
+import UploadImagewithcloudinar from "@/app/(sellerr)/_componenets/UploadImagewithcloudinar";
 import toast from "react-hot-toast";
 import { categories } from "@/utils/categories";
 import { useRouter } from "next/navigation";
