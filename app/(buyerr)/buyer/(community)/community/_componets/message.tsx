@@ -10,7 +10,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import UploadImagewithcloudinar from "@/app/(seller)/_componenets/UploadImagewithcloudinar";
+import UploadImagewithcloudinar from "@/app/(sellerr)/_componenets/UploadImagewithcloudinar";
 import UploadImagewithcloudinarincomunity from "./comunity-upload-image copy";
 import { addPostInCommunity } from "@/actions/addPostInCommunity copy";
 
